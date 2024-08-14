@@ -1,0 +1,749 @@
+INFO:root:      Number                                            Content Label
+0          1  Subject: re : telephone interview with enron c...   ham
+1          2  Subject: mscf speaker series\nmscf speaker ser...   ham
+2          3  Subject: re : info help .\nkrishna ,\nniclas i...   ham
+3          4  Subject: re : backtesting\nnaveen ,\nmost of t...   ham
+4          5  Subject: powerisk 2000 - more cocktail info\n-...   ham
+...      ...                                                ...   ...
+5852    5853  Subject: update account information\nimportant...  spam
+5853    5854  Subject: real time leads - no brokers\nyour na...  spam
+5854    5855  Subject: save your money buy getting this thin...  spam
+5855    5856  Subject: secretly record all internet activity...  spam
+5856    5857  Subject: $ 14 . 95 per year domain names\naffo...  spam
+
+[5857 rows x 3 columns]
+INFO:root:Model Accuracy (training): 99%
+INFO:root:Model Accuracy (testing): 99%
+INFO:root:Classification Report:
+INFO:root:-------------------------
+INFO:root:              precision    recall  f1-score   support
+
+         ham       1.00      0.97      0.98       300
+        spam       0.99      1.00      0.99       872
+
+    accuracy                           0.99      1172
+   macro avg       0.99      0.98      0.99      1172
+weighted avg       0.99      0.99      0.99      1172
+
+INFO:root:Comparison of Expected vs Actual Output with Email Content:
+INFO:root:------------------------------------------------------------
+INFO:root:Expected: Spam, Actual: Ham
+INFO:root:Email Content:
+INFO:root:Subject: your power supply is killing your electrical equipment
+did you know that    ? ? ?
+fact : every electrical system suffers from power surges ?
+fact : 80 % of electrical equipment damage is caused by surges - also known
+as ' spikes ' . these spikes can damage sensitive electronics in computers
+to heavy industrial motors .
+fact : these spikes or surges hit your electrical circuits up to 400 , 000
+times per hour . your electrical equipment is being gradually and
+sometimes suddenly destroyed .
+fact : our range of surge arrestors will reduce your operating costs
+dramatically by extending the life of all your electrical and electronic
+equipment .
+motors run cooler , your fluorescent lighting life is doubled . your
+equipment works more efficiently and your energy costs fall .
+fact : the savings you make in electrical consumption , electrical repairs ,
+electronic repair , telephone and data systems protection and lighting
+replacements can cover the cost of installing our surge and lightning
+arrestors .
+even more importantly no sudden , dramatic system failure caused by
+lightning , surges and spikes .
+now you know     ! !
+don ' t let your power supply kill your business !
+email me for more information . i look forward to hearing from you .
+my very best to you .
+ray butler
+email : apec - tech @ totalise . co . uk
+p . s . don ' t underestimate the high level of risk and costs you ' re your
+business is suffering from in replacement costs , down time and customer
+dissatisfaction .
+apec - tech . com
+the frieslawn centre , hodsoll street , sevenoaks , kent . tnl 5 7 lh united
+kingdom
+tel uk : 01732 824401 fax uk : 01732 824455
+email office : apec - tech @ totalise . co . uk
+to be removed from our mailing list please reply with the word remove in
+the subject line and please accept our apologies for troubling you .
+INFO:root:--------------------------------------------------------------------------------
+INFO:root:Expected: Ham, Actual: Spam
+INFO:root:Email Content:
+INFO:root:Subject: welcome
+network world fusion focus : jason meserve on
+security and bug patch alert
+today ' s focus : bug alert : welcome
+03 / 06 / 00
+dear wincenty kaminski ,
+today ' s focus : bug alert : welcome
+by jason meserve
+welcome to the security and bug patch alert newsletter !
+given the recent spate of high - profile denial - of - service and hack
+attacks and the large number of people who have signed up for this
+newsletter before this first edition has been even published , it is
+clear that security is a major concern in the it community as it
+should be .
+with technology now being looked upon as a profit rather than cost
+center , it departments face more pressure to keep critical systems up
+and running as well as secure . no chief information officer or network
+manager wants to have to tell the ceo that their e - commerce site has
+been broken into and customer credit card data copied . stories like that
+tend to stick in a potential customer  , s mind more than an expensive
+super bowl ad .
+it  , s hard enough to keep up with the latest new technologies , never mind
+latest security patch for your operating system or e - commerce
+application . but we  , re here to help .
+once a week we  , ll publish a list of patches and alerts from all the
+major vendors and security organizations with links to the source . we  , ll
+also provide other ( hopefully ) useful resources for the security -
+conscious it manager .
+comments and suggestions are always welcome ! send mail to
+jmeserve @ nww . com .
+now on with the latest patches and alerts :
+security glitch hits foundry switches
+from this week  , s network world : a security problem has cropped up in
+foundry networks  , serveriron switches that make the devices susceptible
+to denial - of - service attacks .
+read the story :
+download the patch :
+http : / / www . foundrynet . com / bugtraq . html
+* * * * * * * *
+new version of apache web server released
+the apache server project released version 1 . 3 . 12 of the popular apache
+web server this week . the new release fixes what apache calls a cross -
+site scripting problem that could allow malicious html tags to be
+inserted into client - side scripts . download the new version at :
+http : / / www . apache . org / dist /
+* * * * * * * *
+problem with linux htdig package
+both freebsd and debian are reporting a problem with the htdig package
+that runs on their respective platforms . the problem is with the
+htsearch and could allow a user to read any file on the local machine
+accessible to the user id that the script is running under ( which in
+most cases is  + nobody  , ) .
+for more information from debian :
+http : / / www . debian . org / security /
+to download a patch from freebsd :
+http : / / www . freebsd . org / ports /
+* * * * * * * *
+nmh linux package patched
+versions of nmh prior to 1 . 0 . 3 have a vulnerability that could allow
+malicious users to modify the mime headers in a mail message that may
+cause nmh  , s mshow command to execute arbitrary commands . a patch is
+available at :
+* * * * * * * *
+zombie zapper 1 . 1 available
+zombie zapper 1 . 1 helps shut down the troj _ trinoo denial - of - service
+client on windows nt and unix machines . more information at :
+* * * * * * * *
+problem with mysql password authentication
+according to the makers of freebsd , a vulnerability in the mysql
+database server ( prior to version 3 . 22 . 32 ) could allow anyone that can
+connect to the database to access it without a password . more
+information at :
+* * * * * * * *
+to contact jason meserve :
+- - - - - - - - - - - - - - - - - - - - - - - - -
+jason meserve is a staff writer with network world , covering search
+engines , portals , videoconferencing , ip multicast and document management .
+he also oversees the " security alerts " page on fusion
+( http : / / www 2 . nwfusion . com / security / bulletins . html ) . jason can be reached
+at mailto : jmeserve @ nww . com .
+subscription services
+to subscribe or unsubscribe to any network world e - mail newsletters ,
+go to :
+to change your email address , go to :
+subscription questions ? contact customer service by replying to this
+message .
+other questions / comments
+have editorial comments ? write jeff caruso , newsletter editor , at :
+mailto : jcaruso @ nww . com
+for advertising information , write jamie kalbach , account executive ,
+at : mailto : jkalbach @ nww . com
+network world fusion is part of idg . net , the idg online network .
+it all starts here :
+http : / / www . idg . com
+copyright network world , inc . , 2000
+INFO:root:--------------------------------------------------------------------------------
+INFO:root:Expected: Spam, Actual: Ham
+INFO:root:Email Content:
+INFO:root:Subject: get your babies diapers bill paid for , for a year !
+your family could definately use this , now go .
+odzzfzzq
+INFO:root:--------------------------------------------------------------------------------
+INFO:root:Expected: Spam, Actual: Ham
+INFO:root:Email Content:
+INFO:root:Subject: een avontuurtje is oke ,
+als je dit bericht niet kan lezen , klik hier .
+je hebt dit bericht ontvangen omdat je in de db smsmag / kdotv bent . om uit te schrijven , klik hier .
+
+INFO:root:--------------------------------------------------------------------------------
+INFO:root:Expected: Spam, Actual: Ham
+INFO:root:Email Content:
+INFO:root:Subject: blue horseshoe meet me
+dear reader :
+we sometimes approach our analysts for their thoughts on emerging market sectors we ' re interested in . on certain occasions , they come to us with intriguing insights of certain aspects of the market that have caught their attention .
+as you know our track record speaks for itself we are happy to bring you another situation with huge upside potential we think this could be the one that when we look back shortly everyone will be saying i should have more .
+for more info click here ! ! !
+remember : nothing ventured , nothing gained
+
+INFO:root:--------------------------------------------------------------------------------
+INFO:root:Expected: Spam, Actual: Ham
+INFO:root:Email Content:
+INFO:root:Subject: nymex invitation - learn power trading
+power trading
+fundamentals :
+sept 15 - 16 nymex in nyc
+early bird discount now in effect !
+nymex
+power
+delegates will learn :
+electricity
+markets overview
+simulated
+trading exercise
+market
+factors
+basic
+trading tools
+new
+york mercantile exchange
+financial
+instruments options
+real
+options
+role
+of risk management
+identifying
+different types of risk
+position
+analysis
+portfolio
+management
+click
+here to request complete course syllabus
+contractual
+terms , operational terms
+terminology
+trading
+motivations of different physical electricity market participants .
+buy
+low - sell high
+varied
+traded assets
+types
+of electricity transactions
+long - term ,
+medium
+and short - term contracts
+transmission
+services and traded power
+this two - day course provides participants with
+comprehensive training on power trading , deal structuring , credit risk ,
+volatility , risk management , bilateral opportunities and more .
+emi experts instruct using current data ,
+real life examples , and practical experience !
+contact
+emi ( 888 ) 871 - 1207
+click
+here to request more information including syllabus
+hurry class sizes
+are limited !
+click
+here to see other energy training opportunities
+registration
+visit us online
+www . energyinstitution . org
+1369 madison ave , new york , ny 10128
+to unsubscribe to future notices please email unsubscribe @ energyinstitution . org
+
+INFO:root:--------------------------------------------------------------------------------
+INFO:root:Expected: Spam, Actual: Ham
+INFO:root:Email Content:
+INFO:root:Subject: how about obtaining a fully recognized university degree ? 231175433222211111111
+obtain a prosperous future , money earning power ,
+and the admiration of all .
+degrees from prestigious accredited
+universities based on your present knowledge
+and life experience .
+call now to receive your diploma
+within days ! ! !
+1 425 790 3463
+no required tests , classes , books , or interviews .
+bachelors , masters , mba , and doctorate ( phd )
+diplomas available in the field of your choice .
+no one is turned down .
+confidentiality assured .
+call now to receive your diploma
+within days ! ! !
+1 425 790 3463
+call 24 hours a day , 7 days a week , including
+sundays and holidays .
+231175433222211111111
+INFO:root:--------------------------------------------------------------------------------
+INFO:root:Expected: Spam, Actual: Ham
+INFO:root:Email Content:
+INFO:root:Subject: re [ 4 ] :
+terra investigate blackouts i wonder what if . . . paint shopthere ' s also another one tupac sharuk
+INFO:root:--------------------------------------------------------------------------------
+INFO:root:Expected: Spam, Actual: Ham
+INFO:root:Email Content:
+INFO:root:Subject: out of office autoreply : just to her . . .
+i am on vacation week 29 + 30 + 31 . please contact gerd madsen ( gm @ torben - rafn . dk ) or hans chr . jensen ( hcj @ torben - rafn . dk
+your mail is not transfered .
+INFO:root:--------------------------------------------------------------------------------
+INFO:root:Expected: Spam, Actual: Ham
+INFO:root:Email Content:
+INFO:root:Subject: get your babies diapers bill paid for a year .
+your family could definately use this , now go .
+mjirartt
+INFO:root:--------------------------------------------------------------------------------
+INFO:root:Expected: Spam, Actual: Ham
+INFO:root:Email Content:
+INFO:root:Subject: get your babies diapers bill paid for , for a year !
+your family could definately use this , now go .
+kaazqchn
+INFO:root:--------------------------------------------------------------------------------
+INFO:root:Total number of misclassified emails: 11
+INFO:root:
+INFO:root:Results on Testing Data:
+INFO:root:
+INFO:root:     Expected Output Actual Output
+0                ham           ham
+1                ham           ham
+2                ham           ham
+3               spam          spam
+4               spam          spam
+...              ...           ...
+1167            spam          spam
+1168             ham           ham
+1169             ham           ham
+1170             ham           ham
+1171            spam          spam
+
+[1172 rows x 2 columns]
+INFO:root:      Number                                            Content Label
+0          1  Subject: re : telephone interview with enron c...   ham
+1          2  Subject: mscf speaker series\nmscf speaker ser...   ham
+2          3  Subject: re : info help .\nkrishna ,\nniclas i...   ham
+3          4  Subject: re : backtesting\nnaveen ,\nmost of t...   ham
+4          5  Subject: powerisk 2000 - more cocktail info\n-...   ham
+...      ...                                                ...   ...
+5852    5853  Subject: update account information\nimportant...  spam
+5853    5854  Subject: real time leads - no brokers\nyour na...  spam
+5854    5855  Subject: save your money buy getting this thin...  spam
+5855    5856  Subject: secretly record all internet activity...  spam
+5856    5857  Subject: $ 14 . 95 per year domain names\naffo...  spam
+
+[5857 rows x 3 columns]
+INFO:root:Model Accuracy (training): 99%
+INFO:root:Model Accuracy (testing): 99%
+INFO:root:Classification Report:
+INFO:root:-------------------------
+INFO:root:              precision    recall  f1-score   support
+
+         ham       1.00      0.95      0.97       310
+        spam       0.98      1.00      0.99       862
+
+    accuracy                           0.99      1172
+   macro avg       0.99      0.97      0.98      1172
+weighted avg       0.99      0.99      0.99      1172
+
+INFO:root:Comparison of Expected vs Actual Output with Email Content:
+INFO:root:------------------------------------------------------------
+INFO:root:Expected: Spam, Actual: Ham
+INFO:root:Email Content:
+INFO:root:Subject: be one of our survey takers and we ' ll send you a complimentary laptop computer .
+computer survey group needs survey takers in your area now . we ' d like to send you a complimentary laptop computer now for helping us . ( )
+laayawrw
+INFO:root:--------------------------------------------------------------------------------
+INFO:root:Expected: Spam, Actual: Ham
+INFO:root:Email Content:
+INFO:root:Subject: get your babies diapers bill paid for , for a year !
+your family could definately use this , now go .
+odzzfzzq
+INFO:root:--------------------------------------------------------------------------------
+INFO:root:Expected: Spam, Actual: Ham
+INFO:root:Email Content:
+INFO:root:Subject: undeliverable : home based business for grownups
+your message
+subject : home based business for grownups
+sent : sun , 21 jan 2001 09 : 24 : 27 + 0100
+did not reach the following recipient ( s ) :
+75 @ tfi . kpn . com on mon , 25 feb 2002 13 : 32 : 23 + 0100
+the recipient name is not recognized
+the mts - id of the original message is : c = us ; a = ; p = ptt
+telecom ; l = mtpi 70590202251232 fjt 4 d 8 q 5
+msexch : ims : kpn - telecom : i : mtpi 7059 0 ( 000 co 5 a 6 ) unknown recipient
+INFO:root:--------------------------------------------------------------------------------
+INFO:root:Expected: Spam, Actual: Ham
+INFO:root:Email Content:
+INFO:root:Subject: = ? iso - 8859 - 1 ? q ? automated reply from administrator ? =
+vakantie tot 26 juli !
+INFO:root:--------------------------------------------------------------------------------
+INFO:root:Expected: Spam, Actual: Ham
+INFO:root:Email Content:
+INFO:root:Subject: get your babies diapers bill paid for , for a year !
+your family could definately use this , now go .
+kaazqchn
+INFO:root:--------------------------------------------------------------------------------
+INFO:root:Expected: Spam, Actual: Ham
+INFO:root:Email Content:
+INFO:root:Subject: call for papers : the international joint conferences on computer ,
+information and systems sciences and engineering cisse 05
+if you received this email in error , please forward it to the appropriate department at your institution
+please do not reply to this message , your reply will not be received . if you need to contact us , please email us at info @ cisse 2005 . org
+* international joint conferences on computer , information , *
+* and systems sciences , and engineering ( cisse 05 ) *
+* *
+* *
+* http : / / www . cisse 2005 . org *
+* *
+* *
+* *
+december 10 - 20 , 2005
+sponsored by :
+institute of electrical & electronics engineers ( ieee )
+university of bridgeport
+conference overview
+cisse 05 provides a virtual forum for presentation and discussion of the
+state - of the - art research on computers , information and systems sciences and
+engineering . the virtual conference will be conducted through the internet
+using web - conferencing tools , made available by the conference .
+authors will be presenting their powerpoint , audio or video presentations
+using web - conferencing tools without the need for travel . conference
+sessions will be broadcast to all the conference participants , where session
+participants can interact with the presenter during the presentation and
+( or ) during the q & a slot that follows the presentation .
+this international conference will be held entirely on - line . the accepted and
+presented papers will be made available after the conference both on a cd and
+as a book publication .
+conference participants - authors , presenters and attendees - only need an
+internet connection and sound available on their computers in order to be
+able to contribute and participate in this international ground - breaking
+conference .
+the on - line structure of this high - quality event will allow academic
+professionals and industry participants to contribute work and attend
+world - class technical presentations based on rigorously refereed
+submissions , live , without the need for investing significant travel funds
+or time out of the office .
+potential non - author conference attendees who cannot make the on - line
+conference dates are encouraged to register , as the entire joint conferences
+will be archived for future viewing .
+please feel free to download the call for papers at :
+http : / / www . cisse 2005 . org / cfpcisseo 5 . doc ( microsoft word format ) or
+http : / / www . cisse 2005 . org / cfpcisseo 5 . pdf ( adobe pdf format )
+cisse 05 is composed of the following four conferences :
+* international conference on industrial electronics , technology
+& automation ( ieta 05 )
+topics : advanced and distributed control systems , intelligent control
+systems ( nn , fl , ga , . etc ) , expert systems , man machine interaction , data
+fusion , factory automation , robotics , motion control , machine vision , mems
+sensors and actuators , sensors fusion , power electronics , high frequency
+converters , motors and drives , power converters , power devices and
+components , electric vehicles and intelligent transportation , process
+automation , factory communication , manufacturing information system advances
+in manufacturing systems , industrial applications of multi media ,
+intelligent systems instrumentation , industrial instrumentation , modeling
+and simulation , signal processing , image and data processing , vr and
+parallel systems .
+conference page : http : / / www . cisse 2005 . org / ieta . aspx
+* international conference on telecommunications and networking ( teneo 5 )
+topics : optical networks and switching , computer networks , network
+architectures and equipment , access technologies , telecommunication
+technology , coding and modulation technique , modeling and simulation , spread
+spectrum and cdma systems , ofdm technology , space - time coding , ultra
+wideband communications , medium access control , spread spectrum , wireless
+lan : ieee 802 . 11 , hiperlan , bluetooth , cellular wireless networks , cordless
+systems and wireless local loop , mobile network layer , mobile transport
+layer , support for mobility , conventional encryption and message
+confidentiality , block ciphers design principles , block ciphers modes of
+operation , public - key cryptography and message authentication ,
+authentication application , stenography , electronic mail security , web
+security , ip security , firewalls , computer forensics .
+conference page : http : / / www . cisse 2005 . org / tene . aspx
+* international conference on systems , computing sciences and software
+engineering ( scss 05 )
+topics : grid computing , internet - based computing models , resource discovery ,
+programming models and tools , e - science and virtual instrumentation ,
+biometric authentication , computers for people of special needs , human
+computer interaction , information and knowledge engineering , algorithms ,
+parallel and distributed processing , modeling and simulation , services and
+applications , embedded systems and applications , databases , programming
+languages , signal processing theory and methods , signal processing for
+communication , signal processing architectures and implementation ,
+information processing , geographical information systems ,
+object based software engineering , parallel and distributed computing , real
+time systems multiprocessing , file systems and i / o , kernel and os structures .
+conference page : http : / / www . cisse 2005 . org / scss . aspx
+* international conference on engineering education , instructional
+technology , assessment , and e - learning ( eiae 05 )
+topics : instructional design , accreditation , curriculum design , educational
+tools , 2 - 2 - 2 platforms , teaching capstone design , teaching design at the
+lower levels , design and development of e - learning tools , assessment methods
+in engineering , development and implementation of e - learning tools ,
+economical and social impacts of e - learning , platforms and systems for
+k - 12 / industry and higher education cooperation .
+conference page : http : / / www . cisse 2005 . org / eiae . aspx
+paper submission
+prospective authors are invited to submit full papers electronically in
+microsoft word or pdf format through the website of each conference at
+http : / / www . cisse 2005 . org . accepted papers must be presented in the virtual
+conference by one of the authors .
+to submit your paper , visit http : / / www . cisse 2005 . org / author / submit . aspx or
+visit the individual conference pages .
+important dates
+paper submission : september 30 , 2005
+notification of acceptance : october 28 , 2005
+final manuscript and registration : november 18 , 2005
+cisse 2005 66 glenbrook rd stamford , ct 06902 this e - mail message is an advertisement and / or solicitation .
+INFO:root:--------------------------------------------------------------------------------
+INFO:root:Expected: Spam, Actual: Ham
+INFO:root:Email Content:
+INFO:root:Subject: cle courses
+ best cle course i  ve ever attended ! 
+attorneys across the country tell us
+that our courses are among the best they have ever attended . why ? because we
+provide practical easily implemented solutions you can use immediately to
+improve your practice .
+see the course descriptions
+register
+www . intelligencecle . org
+or call for more information
+888 . 213 . 8848
+" investigations evidence gathering "
+( 4 hrs . including 1 hr . ethics )
+7 \ 26 milwaukee
+7 \ 27 saint paul , mn
+7 \ 28 minneapolis
+12 \ 19 nassau , bahamas
+" asset protection wealth
+preservation " 4 hrs . , including 1 ethics
+7 \ 28 minneapolis
+12 \ 19 nassau , bahamas
+if you prefer not to be notified of future
+events , simply reply  remove  .
+INFO:root:--------------------------------------------------------------------------------
+INFO:root:Expected: Spam, Actual: Ham
+INFO:root:Email Content:
+INFO:root:Subject: just to her . . .
+your message to tjvs @ remgro . com
+has been blocked . should it be business related forward this message to helpdesk @ commsco . com for immediate release .
+message id : t 723 b 9 cb 981 acl 04 aobeb 98
+rule triggered : spam files
+INFO:root:--------------------------------------------------------------------------------
+INFO:root:Expected: Spam, Actual: Ham
+INFO:root:Email Content:
+INFO:root:Subject: * * * * * spam * * * * *
+    
+INFO:root:--------------------------------------------------------------------------------
+INFO:root:Expected: Spam, Actual: Ham
+INFO:root:Email Content:
+INFO:root:Subject: partnership for raising awareness
+hello ,
+my name is shane lamotte and i ' m in the new rock
+band living illusion . how are you ? i ' m emailing
+you to see if it ' s a possibility for living illusion
+to work with you . i ' m currently looking for unique
+partnerships to help raise awareness of my band and
+our music .
+if you want to check out my band
+and listen to some tunes go to :
+http : / / www . livingillusion . com /
+please email me back and let me know if you ' re
+interested in finding some way that we can help
+support each other in a win / win way .
+thanks ,
+shane lamotte
+www . livingillusion . com
+ps also if your interested in exchanging links
+between my website and yours just let me know and
+we ' ll make it happen : )
+INFO:root:--------------------------------------------------------------------------------
+INFO:root:Expected: Spam, Actual: Ham
+INFO:root:Email Content:
+INFO:root:Subject: re [ 21 ]
+keep calm ! in 1827 sims vietnam warit ' ll be better i have got
+INFO:root:--------------------------------------------------------------------------------
+INFO:root:Expected: Spam, Actual: Ham
+INFO:root:Email Content:
+INFO:root:Subject: security alert - confirm your national credit union information
+- - >
+
+INFO:root:--------------------------------------------------------------------------------
+INFO:root:Expected: Spam, Actual: Ham
+INFO:root:Email Content:
+INFO:root:Subject: same medicine , different price !
+big savings on brand name drugs .
+injustice anywhere is a threat to justice everywhere .
+some rise by sin , and some by virtue fall .
+the judge is condemned when the criminal is absolved .
+on the heights , all paths are paved with daggers .
+INFO:root:--------------------------------------------------------------------------------
+INFO:root:Expected: Spam, Actual: Ham
+INFO:root:Email Content:
+INFO:root:Subject: what ' s going on
+hi u . this is sarah gal . where have you been hiding ? if you want to hang out and talk some more i would sure like too . hey check out these new pictures of me i just got taken . have a good one .
+http : / / mmjx . sakarsucks . com / sal 6 /
+martina sonant deprecatory boogie northampton .
+INFO:root:--------------------------------------------------------------------------------
+INFO:root:Expected: Ham, Actual: Spam
+INFO:root:Email Content:
+INFO:root:Subject: welcome
+network world fusion focus : jason meserve on
+security and bug patch alert
+today ' s focus : bug alert : welcome
+03 / 06 / 00
+dear wincenty kaminski ,
+today ' s focus : bug alert : welcome
+by jason meserve
+welcome to the security and bug patch alert newsletter !
+given the recent spate of high - profile denial - of - service and hack
+attacks and the large number of people who have signed up for this
+newsletter before this first edition has been even published , it is
+clear that security is a major concern in the it community as it
+should be .
+with technology now being looked upon as a profit rather than cost
+center , it departments face more pressure to keep critical systems up
+and running as well as secure . no chief information officer or network
+manager wants to have to tell the ceo that their e - commerce site has
+been broken into and customer credit card data copied . stories like that
+tend to stick in a potential customer  , s mind more than an expensive
+super bowl ad .
+it  , s hard enough to keep up with the latest new technologies , never mind
+latest security patch for your operating system or e - commerce
+application . but we  , re here to help .
+once a week we  , ll publish a list of patches and alerts from all the
+major vendors and security organizations with links to the source . we  , ll
+also provide other ( hopefully ) useful resources for the security -
+conscious it manager .
+comments and suggestions are always welcome ! send mail to
+jmeserve @ nww . com .
+now on with the latest patches and alerts :
+security glitch hits foundry switches
+from this week  , s network world : a security problem has cropped up in
+foundry networks  , serveriron switches that make the devices susceptible
+to denial - of - service attacks .
+read the story :
+download the patch :
+http : / / www . foundrynet . com / bugtraq . html
+* * * * * * * *
+new version of apache web server released
+the apache server project released version 1 . 3 . 12 of the popular apache
+web server this week . the new release fixes what apache calls a cross -
+site scripting problem that could allow malicious html tags to be
+inserted into client - side scripts . download the new version at :
+http : / / www . apache . org / dist /
+* * * * * * * *
+problem with linux htdig package
+both freebsd and debian are reporting a problem with the htdig package
+that runs on their respective platforms . the problem is with the
+htsearch and could allow a user to read any file on the local machine
+accessible to the user id that the script is running under ( which in
+most cases is  + nobody  , ) .
+for more information from debian :
+http : / / www . debian . org / security /
+to download a patch from freebsd :
+http : / / www . freebsd . org / ports /
+* * * * * * * *
+nmh linux package patched
+versions of nmh prior to 1 . 0 . 3 have a vulnerability that could allow
+malicious users to modify the mime headers in a mail message that may
+cause nmh  , s mshow command to execute arbitrary commands . a patch is
+available at :
+* * * * * * * *
+zombie zapper 1 . 1 available
+zombie zapper 1 . 1 helps shut down the troj _ trinoo denial - of - service
+client on windows nt and unix machines . more information at :
+* * * * * * * *
+problem with mysql password authentication
+according to the makers of freebsd , a vulnerability in the mysql
+database server ( prior to version 3 . 22 . 32 ) could allow anyone that can
+connect to the database to access it without a password . more
+information at :
+* * * * * * * *
+to contact jason meserve :
+- - - - - - - - - - - - - - - - - - - - - - - - -
+jason meserve is a staff writer with network world , covering search
+engines , portals , videoconferencing , ip multicast and document management .
+he also oversees the " security alerts " page on fusion
+( http : / / www 2 . nwfusion . com / security / bulletins . html ) . jason can be reached
+at mailto : jmeserve @ nww . com .
+subscription services
+to subscribe or unsubscribe to any network world e - mail newsletters ,
+go to :
+to change your email address , go to :
+subscription questions ? contact customer service by replying to this
+message .
+other questions / comments
+have editorial comments ? write jeff caruso , newsletter editor , at :
+mailto : jcaruso @ nww . com
+for advertising information , write jamie kalbach , account executive ,
+at : mailto : jkalbach @ nww . com
+network world fusion is part of idg . net , the idg online network .
+it all starts here :
+http : / / www . idg . com
+copyright network world , inc . , 2000
+INFO:root:--------------------------------------------------------------------------------
+INFO:root:Expected: Spam, Actual: Ham
+INFO:root:Email Content:
+INFO:root:Subject: your power supply is killing your electrical equipment
+did you know that    ? ? ?
+fact : every electrical system suffers from power surges ?
+fact : 80 % of electrical equipment damage is caused by surges - also known
+as ' spikes ' . these spikes can damage sensitive electronics in computers
+to heavy industrial motors .
+fact : these spikes or surges hit your electrical circuits up to 400 , 000
+times per hour . your electrical equipment is being gradually and
+sometimes suddenly destroyed .
+fact : our range of surge arrestors will reduce your operating costs
+dramatically by extending the life of all your electrical and electronic
+equipment .
+motors run cooler , your fluorescent lighting life is doubled . your
+equipment works more efficiently and your energy costs fall .
+fact : the savings you make in electrical consumption , electrical repairs ,
+electronic repair , telephone and data systems protection and lighting
+replacements can cover the cost of installing our surge and lightning
+arrestors .
+even more importantly no sudden , dramatic system failure caused by
+lightning , surges and spikes .
+now you know     ! !
+don ' t let your power supply kill your business !
+email me for more information . i look forward to hearing from you .
+my very best to you .
+ray butler
+email : apec - tech @ totalise . co . uk
+p . s . don ' t underestimate the high level of risk and costs you ' re your
+business is suffering from in replacement costs , down time and customer
+dissatisfaction .
+apec - tech . com
+the frieslawn centre , hodsoll street , sevenoaks , kent . tnl 5 7 lh united
+kingdom
+tel uk : 01732 824401 fax uk : 01732 824455
+email office : apec - tech @ totalise . co . uk
+to be removed from our mailing list please reply with the word remove in
+the subject line and please accept our apologies for troubling you .
+INFO:root:--------------------------------------------------------------------------------
+INFO:root:Expected: Spam, Actual: Ham
+INFO:root:Email Content:
+INFO:root:Subject: spice up your cellphone with a wallpaper from dirtyhippo .
+dress up your phone . visit here .
+dxndeueqjdzo
+INFO:root:--------------------------------------------------------------------------------
+INFO:root:Total number of misclassified emails: 17
+INFO:root:
+INFO:root:Results on Testing Data:
+INFO:root:
+INFO:root:     Expected Output Actual Output
+0               spam           ham
+1                ham           ham
+2                ham           ham
+3                ham           ham
+4               spam          spam
+...              ...           ...
+1167             ham           ham
+1168            spam          spam
+1169             ham           ham
+1170             ham           ham
+1171            spam          spam
+
+[1172 rows x 2 columns]
